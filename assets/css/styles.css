@@ -12,8 +12,3 @@ body > section {
     border: 2px solid black;
     margin: 2px;
 }
-
-body > section > form {
-    align-items: center;
-    justify-content: center;
-}

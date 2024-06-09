@@ -1,6 +1,38 @@
-#form-content {
+/* #form-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+} */
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+body > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+form > div {
+    display: block;
+}
+
+#blog-info-form > div {
+    display: inline-block;
+    width: 100%;
+}
+
+#blog-info-form > div > input {
+    width: 100%;
+}
+
+#blog-info-form > div > textarea{
+    width: 100%;
 }

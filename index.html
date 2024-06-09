@@ -23,24 +23,24 @@
     </section>
     <section id="right-section">
         <div id=form-content>
-            <form action="">
+            <form id="blog-info-form" action="" method="">
                 <div>
                     <label for="UserName">UserName</label>
-                    <input type="text">
+                    <input type="text" id="UserName" name="UserName">
                 </div>
                 <div>
                     <label for="Title">Title</label>
-                    <input type="text">
+                    <input type="text" id="Title" name="Title">
                 </div>
                 <div>
                     <label for="Content">Content</label>
                     <textarea name="ContentArea" id="Content"></textarea>
                 </div>
-                <a href="./blog.html">
-                    <button style="background-color: blue; color: white;">Click Me!</button>
-                </a>
-            </form>
+                <button id="form-submit-button" type="submit" style="background-color: blue; color: white;">Click Me!</button>
+                <div id="errorMessage"></div>
+            </form>            
         </div>
     </section>
+ <script src="./assets/js/form.js"></script>
 </body>
 </html>
