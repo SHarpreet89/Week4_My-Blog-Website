@@ -12,35 +12,46 @@
 <body>
     <header>
         <nav>
-            
+            <h1>WELCOME TO THE BLOGSPOT SITE, LETS HELP YOU START YOUR FIRST BLOG</h1>
+            <button id="viewmode-button">
+                <img id="theme-button-image"
+                src="./assets/images/Light-Dark.jpg"
+                data-darkMode="./assets/images/Dark-Light.jpg" 
+                data-lightMode="./assets/images/Light-Dark.jpg"
+                data-themeState="Light"
+                alt="Theme Switching Button Image"
+                >
+            </button>
         </nav>
     </header>
-
-    <section id="left-section">
-        <div>
-            <img src="" alt="">
-        </div>
-    </section>
-    <section id="right-section">
-        <div id=form-content>
-            <form id="blog-info-form" action="" method="">
-                <div>
-                    <label for="UserName">UserName</label>
-                    <input type="text" id="UserName" name="UserName">
-                </div>
-                <div>
-                    <label for="Title">Title</label>
-                    <input type="text" id="Title" name="Title">
-                </div>
-                <div>
-                    <label for="Content">Content</label>
-                    <textarea name="ContentArea" id="Content"></textarea>
-                </div>
-                <button id="form-submit-button" type="submit" style="background-color: blue; color: white;">Click Me!</button>
-                <div id="errorMessage"></div>
-            </form>            
-        </div>
-    </section>
+    <div id="content-area">
+        <section id="left-section">
+            <div>
+                <img src="" alt="">
+            </div>
+        </section>
+        <section id="right-section">
+            <div id=form-content>
+                <form id="blog-info-form" action="" method="">
+                    <div>
+                        <label for="UserName">UserName</label>
+                        <input type="text" id="UserName" name="UserName">
+                    </div>
+                    <div>
+                        <label for="Title">Title</label>
+                        <input type="text" id="Title" name="Title">
+                    </div>
+                    <div>
+                        <label for="Content">Content</label>
+                        <textarea name="ContentArea" id="Content"></textarea>
+                    </div>
+                    <button id="form-submit-button" type="submit" style="background-color: blue; color: white;">Click Me!</button>
+                    <div id="errorMessage"></div>
+                </form>            
+            </div>
+        </section>
+    </div>  
  <script src="./assets/js/form.js"></script>
+ <script src="./assets/js/logic.js"></script>
 </body>
 </html>

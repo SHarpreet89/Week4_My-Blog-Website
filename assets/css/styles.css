@@ -12,3 +12,33 @@ body > section {
     border: 2px solid black;
     margin: 2px;
 }
+
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.light-theme{
+    background-color: white;
+    color: black;
+}
+
+/* Light theme */
+.light-theme > * {
+    border-color: black; /* Set border color for all direct children of body */
+}
+
+/* Dark theme */
+.dark-theme > * {
+    border-color: white; /* Set border color for all direct children of body */
+}
+
+/* Light theme */
+.light-theme #content-area > section {
+    border-color: black; /* Set border color for sections within #content-area */
+}
+
+/* Dark theme */
+.dark-theme #content-area > section {
+    border-color: white; /* Set border color for sections within #content-area */
+}
