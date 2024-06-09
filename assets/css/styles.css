@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+body > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+body > section > form {
+    align-items: center;
+    justify-content: center;
+}
