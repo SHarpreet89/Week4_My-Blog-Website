@@ -9,3 +9,60 @@ body {
     text-decoration: none;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blog-post-card {
+    background-color: beige;
+}
+
+#blogPosts-Container {
+    width: 95%;
+}
+
+#blogPosts-Container > div {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+#blogPosts-Container > div > h1 {
+    border-radius: 15px 15px 0 0px;
+}
+
+#blogPosts-Container > div > h3 {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#blogPosts-Container > div > * {
+    border: .5px solid rgb(103, 103, 103);
+    padding: 10px 15px 10px 15px;
+}
+
+#blogPosts-Container > div > p {
+    min-height: 100px;
+    border: .5px solid rgb(103, 103, 103);
+}
+
+.dark-theme #blog-post-card > * {
+    border-color: rgb(209, 209, 209);
+}
+
+.light-theme #blog-post-card > * {
+    border-color: rgb(69, 69, 69);
+}
+
+.dark-theme #blog-post-card {
+    border-color: white;
+    background-color: rgb(40, 40, 40);
+}
+
+.light-theme #blog-post-card {
+    border-color: black;
+    background-color: beige;
+}

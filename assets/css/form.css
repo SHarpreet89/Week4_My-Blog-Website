@@ -1,10 +1,8 @@
 #form-content {
     padding: 1%;
     width: 70%;
+    max-height: 100%;
 }
-
-
-
 
 #form-submit-button {
     min-height: 30px;
@@ -24,9 +22,8 @@ body {
 }
 
 
-
 #content-area > section {
-    height: 70vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -43,6 +40,7 @@ form > div {
 #blog-info-form > div {
     display: block;
     width: 95%;
+    max-height: 100%;
 }
 
 #blog-info-form > div > input {
@@ -53,4 +51,22 @@ form > div {
     min-width: 100%;
     max-width: 100%;
     height: 80px;
+    max-height: 40vh;
+}
+
+#left-section > div {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center; /* Ensures the image is centered vertically */
+    overflow: hidden;
+}
+
+#blog-background-image {
+    width: 70%; /* Adjusts the image to the full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 80%; /* Prevents the image from being too wide */
+    max-height: 80%; /* Prevents the image from being too tall */
+    object-fit: contain; /* Ensures the image scales down while maintaining aspect ratio */
 }

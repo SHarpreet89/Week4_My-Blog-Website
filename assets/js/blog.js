@@ -2,14 +2,14 @@ const blogsContainer = document.getElementById('blogPosts-Container');
 const clearStorage = document.getElementById('clearlocalstorage');
 
 clearStorage.addEventListener('click', function() {
-    console.log("CLEAR Button clicked"); // Debug log
+    console.log("Clear Button clicked"); // Debug log
     localStorage.removeItem('blogPosts');
     loadPosts();
 });
 
 function createBlogPost (post) {
     const blogPost = document.createElement('div');
-    blogPost.setAttribute('class', 'blog-post-card');
+    blogPost.setAttribute('id', 'blog-post-card');
 
     const title = document.createElement('h1');
     title.textContent = post.title;
