@@ -1,3 +1,59 @@
+:root {
+--theme-dark-background-color: rgb(29, 29, 111);
+--theme-light-background-color: rgb(186, 244, 253);
+--theme-dark-text-color: rgb(255, 255, 255);
+--theme-light-text-color: black;
+--theme-dark-border-color: white;
+--theme-light-border-color: black;
+--theme-dark-form-color: rgb(186, 244, 253);
+--theme-light-form-color: beige;
+}
+.dark-theme,
+.dark-theme * {
+    background-color: var(--theme-dark-background-color);
+    color: var(--theme-dark-text-color);
+    border-color: var(--theme-dark-border-color);
+}
+
+.light-theme,
+.light-theme * { 
+    background-color: var(--theme-light-background-color);
+    color: var(--theme-light-text-color);
+    border-color: var(--theme-light-border-color);
+}
+
+.light-theme #content-area > section {
+    border-color: var(--theme-light-border-color);
+}
+
+.dark-theme #content-area > section {
+    border-color: var(--theme-dark-border-color);
+}
+
+.light-theme input , .light-theme textarea {
+    background-color: var(--theme-light-form-color);
+}
+
+.dark-theme input , .dark-theme textarea {
+    background-color: var(--theme-dark-form-color);
+}
+
+.dark-theme input , .dark-theme textarea {
+    color: black;
+}
+
+.dark-theme #blog-post-card {
+    background-color: beige;
+}
+
+input , textarea{
+    padding: 5px;
+}
+
+button {
+    padding: 8px;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -21,6 +77,10 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+nav > h1 {
+    height: 99%;
 }
 
 nav > div {
@@ -70,39 +130,25 @@ body > section {
     margin: 2px;
 }
 
-.dark-theme {
-    background-color: black;
-    color: white;
-}
-
-.light-theme{
-    background-color: white;
-    color: black;
-}
-
-.dark-theme > header {
+/* .dark-theme > header {
     background-color: black;
 }
 
-/* Light theme */
 .light-theme > * {
-    border-color: black; /* Set border color for all direct children of body */
+    border-color: black;
 }
 
-/* Dark theme */
 .dark-theme > * {
-    border-color: white; /* Set border color for all direct children of body */
+    border-color: white;
 }
 
-/* Light theme */
 .light-theme #content-area > section {
-    border-color: black; /* Set border color for sections within #content-area */
+    border-color: black;
 }
 
-/* Dark theme */
 .dark-theme #content-area > section {
-    border-color: white; /* Set border color for sections within #content-area */
-}
+    border-color: white;
+} */
 
 footer {
     border-top: 2px solid black;
