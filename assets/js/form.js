@@ -6,6 +6,7 @@ const error = document.getElementById("errorMessage");
 const blogForm = document.getElementById("blog-info-form");
 
 formButton.addEventListener('click', function(event) {
+    console.log("Button clicked"); // Debug log
     event.preventDefault(); // Prevent form submission until validation is done
 
     // Clear previous error message
@@ -22,17 +23,23 @@ formButton.addEventListener('click', function(event) {
     // Validate Content
     else {
         const wordCount = content.value.trim().split(/\s+/).length; // Split content by whitespace and count words
-        if (wordCount < 10) {
-            error.textContent = "The Content must be at least 10 words long! Please enter a longer content description for the blog.";
+        if (wordCount < 5) {
+            error.textContent = "The Content must be at least 5 words long! Please enter a longer content description for the blog.";
         } else {
             // Create blogData object inside the event listener after validation
-            const blogData = {
+            const blogEntry = {
                 userName: userName.value.trim(),
                 title: title.value.trim(),
                 content: content.value.trim(),
             };
-            localStorage.setItem('BlogInfo', JSON.stringify(blogData));
-            console.log(JSON.parse(localStorage.getItem('BlogInfo')));
+
+            let posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+                if (!Array.isArray(posts)) {
+                    posts = []; // Ensure posts is an array
+                }
+            posts.push(blogEntry);
+            localStorage.setItem('blogPosts', JSON.stringify(posts));
+            console.log(JSON.parse(localStorage.getItem('blogPosts')));
             blogForm.setAttribute('action', './blog.html');
             blogForm.submit(); 
         }

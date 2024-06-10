@@ -1,33 +1,10 @@
 #form-content {
     padding: 1%;
-}
-
-nav {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#viewmode-button {
-    background: none;
-    border: none;
-    padding-right: 2%;
-    cursor: pointer;
-    height: 80%;
-    align-items: center;
-}
-
-#viewmode-button img {
-    width: auto; /* Adjust size as needed */
-    height: 65px; /* Adjust size as needed */
+    width: 70%;
 }
 
 
-nav > h1 {
-    padding: 2%
-}
+
 
 #form-submit-button {
     min-height: 30px;
@@ -46,14 +23,10 @@ body {
     justify-content:space-evenly;
 }
 
-header {
-    height: 10vh;
-    border-bottom: 2px solid black;
-    margin-bottom: 2px;
-}
+
 
 #content-area > section {
-    height: 88vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -68,7 +41,7 @@ form > div {
 }
 
 #blog-info-form > div {
-    display: inline-block;
+    display: block;
     width: 95%;
 }
 
@@ -77,5 +50,7 @@ form > div {
 }
 
 #blog-info-form > div > textarea {
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 80px;
 }
