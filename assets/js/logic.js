@@ -26,16 +26,20 @@ function applyTheme(themeState) {
         buttonImage.setAttribute('data-themeState', 'darkMode'); // Update the theme state
         document.querySelector('body').classList.add('dark-theme');
         document.querySelector('body').classList.remove('light-theme');
-        blogBackgroundImage.setAttribute('src', './assets/images/Blogspot-background-img-dark.png');
         localStorage.setItem('themeState', 'darkMode'); // Update the theme state
+        if (blogBackgroundImage) {
+            blogBackgroundImage.setAttribute('src', './assets/images/Blogspot-background-img-dark.png');
+        }
     } else {
         // Switch to light mode
         buttonImage.setAttribute('src', buttonImage.getAttribute('data-lightMode'));
         buttonImage.setAttribute('data-themeState', 'lightMode'); // Update the theme state
         document.querySelector('body').classList.add('light-theme');
         document.querySelector('body').classList.remove('dark-theme');
-        blogBackgroundImage.setAttribute('src', './assets/images/Blogspot-background-img-light.png');
         localStorage.setItem('themeState', 'lightMode'); // Update the theme state
+        if (blogBackgroundImage) {
+            blogBackgroundImage.setAttribute('src', './assets/images/Blogspot-background-img-light.png');
+        }
     }
     console.log('Saved theme from button is', localStorage.getItem('themeState'));
 }
