@@ -4,7 +4,6 @@ const blogBackgroundImage = document.getElementById("blog-background-image");
 
 document.addEventListener('DOMContentLoaded', function() {
     const themeStateLocalStorage = localStorage.getItem('themeState');
-    console.log('Saved theme from storage is', themeStateLocalStorage);
     if (themeStateLocalStorage) {
         applyTheme(themeStateLocalStorage);
     } else {
@@ -41,5 +40,4 @@ function applyTheme(themeState) {
             blogBackgroundImage.setAttribute('src', './assets/images/Blogspot-background-img-light.png');
         }
     }
-    console.log('Saved theme from button is', localStorage.getItem('themeState'));
 }

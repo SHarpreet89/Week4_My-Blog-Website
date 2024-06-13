@@ -1,11 +1,4 @@
 const blogsContainer = document.getElementById('blogPosts-Container');
-const clearStorage = document.getElementById('clearlocalstorage');
-
-clearStorage.addEventListener('click', function() {
-    console.log("Clear Button clicked"); // Debug log
-    localStorage.removeItem('blogPosts');
-    loadPosts();
-});
 
 function createBlogPost (post) {
     const blogPost = document.createElement('div');
@@ -33,10 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function loadPosts() {
 const blogPosts = JSON.parse(localStorage.getItem('blogPosts'));
+console.log("Open the arrow below to see the array of blog posts");
+console.log(blogPosts);
 
 if (blogPosts) {
     blogsContainer.innerHTML = '';
-    blogPosts.forEach(post => {
+    blogPosts.reverse().forEach(post => {
         const blogPost = createBlogPost(post);
         blogsContainer.appendChild(blogPost);
     });

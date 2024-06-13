@@ -43,7 +43,7 @@
 }
 
 .light-theme #blog-post-card > h1 {
-    background-color: antiquewhite;
+    background-color: bisque;
 }
 
 .light-theme #blog-post-card > p {
@@ -70,13 +70,17 @@
     color: black;
 }
 
+#viewmode-button:hover {
+    box-shadow: none !important;
+}
+
 button:hover {
     transition: 200ms;
     box-shadow: black 0px 1px 10px;
 }
 
 #blogPosts-Container > div:hover{
-    transition: 400ms;
+    transition: 200ms;
     box-shadow: black 0px 8px 20px;
 }
 
@@ -146,8 +150,8 @@ nav > div > * {
 }
 
 #theme-button-image {
-    max-width: 100%; /* Adjust size as needed */
-    max-height: 80%; /* Adjust size as needed */
+    max-width: 100%; 
+    max-height: 80%; 
 }
 
 main {
@@ -162,26 +166,6 @@ body > section {
     border: 2px solid black;
     margin: 2px;
 }
-
-/* .dark-theme > header {
-    background-color: black;
-}
-
-.light-theme > * {
-    border-color: black;
-}
-
-.dark-theme > * {
-    border-color: white;
-}
-
-.light-theme #content-area > section {
-    border-color: black;
-}
-
-.dark-theme #content-area > section {
-    border-color: white;
-} */
 
 footer {
     border-top: 2px solid black;

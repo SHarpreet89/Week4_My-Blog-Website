@@ -49,21 +49,3 @@ main {
     min-height: 100px;
     border: .5px solid rgb(103, 103, 103);
 }
-
-/* .dark-theme #blog-post-card > * {
-    border-color: rgb(209, 209, 209);
-}
-
-.light-theme #blog-post-card > * {
-    border-color: rgb(69, 69, 69);
-}
-
-.dark-theme #blog-post-card {
-    border-color: white;
-    background-color: rgb(40, 40, 40);
-}
-
-.light-theme #blog-post-card {
-    border-color: black;
-    background-color: beige;
-} */
