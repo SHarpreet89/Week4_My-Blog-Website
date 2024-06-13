@@ -1,3 +1,99 @@
+:root {
+--theme-dark-background-color: rgb(29, 29, 111);
+--theme-light-background-color: rgb(208, 246, 252);
+--theme-dark-text-color: rgb(255, 255, 255);
+--theme-light-text-color: black;
+--theme-dark-border-color: white;
+--theme-light-border-color: black;
+--theme-dark-form-color: rgb(208, 246, 252);
+--theme-light-form-color: beige;
+}
+.dark-theme,
+.dark-theme * {
+    background-color: var(--theme-dark-background-color);
+    color: var(--theme-dark-text-color);
+    border-color: var(--theme-dark-border-color);
+}
+
+.light-theme,
+.light-theme * { 
+    background-color: var(--theme-light-background-color);
+    color: var(--theme-light-text-color);
+    border-color: var(--theme-light-border-color);
+}
+
+.light-theme #content-area > section {
+    border-color: var(--theme-light-border-color);
+}
+
+.dark-theme #content-area > section {
+    border-color: var(--theme-dark-border-color);
+}
+
+.light-theme input , .light-theme textarea {
+    background-color: var(--theme-light-form-color);
+}
+
+.dark-theme input , .dark-theme textarea {
+    background-color: var(--theme-dark-form-color);
+}
+
+.dark-theme input , .dark-theme textarea {
+    color: black;
+}
+
+.light-theme #blog-post-card > h1 {
+    background-color: bisque;
+}
+
+.light-theme #blog-post-card > p {
+    background-color: cornsilk;
+}
+
+.light-theme #blog-post-card > h3 {
+    background-color: bisque;
+}
+
+.dark-theme #blog-post-card > h1 {
+    background-color: rgb(148, 241, 255);
+}
+
+.dark-theme #blog-post-card > p {
+    background-color: rgb(208, 246, 252);
+}
+
+.dark-theme #blog-post-card > h3 {
+    background-color: rgb(75, 231, 255);
+}
+
+.dark-theme #blog-post-card > * {
+    color: black;
+}
+
+#viewmode-button:hover {
+    box-shadow: none !important;
+}
+
+button:hover {
+    transition: 200ms;
+    box-shadow: black 0px 1px 10px;
+}
+
+#blogPosts-Container > div:hover{
+    transition: 200ms;
+    box-shadow: black 0px 8px 20px;
+}
+
+input , textarea{
+    padding: 5px;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -21,6 +117,12 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+nav > h1 {
+    height: 99%;
+    font-size: xx-large;
+    padding: 2% 3% 2% 3%;
 }
 
 nav > div {
@@ -48,17 +150,12 @@ nav > div > * {
 }
 
 #theme-button-image {
-    max-width: 100%; /* Adjust size as needed */
-    max-height: 80%; /* Adjust size as needed */
+    max-width: 100%; 
+    max-height: 80%; 
 }
 
 main {
     margin-top: 12vh;
-}
-
-nav > h1 {
-    font-size: xx-large;
-    padding: 2%
 }
 
 body > section {
@@ -68,40 +165,6 @@ body > section {
     width: 50vw;
     border: 2px solid black;
     margin: 2px;
-}
-
-.dark-theme {
-    background-color: black;
-    color: white;
-}
-
-.light-theme{
-    background-color: white;
-    color: black;
-}
-
-.dark-theme > header {
-    background-color: black;
-}
-
-/* Light theme */
-.light-theme > * {
-    border-color: black; /* Set border color for all direct children of body */
-}
-
-/* Dark theme */
-.dark-theme > * {
-    border-color: white; /* Set border color for all direct children of body */
-}
-
-/* Light theme */
-.light-theme #content-area > section {
-    border-color: black; /* Set border color for sections within #content-area */
-}
-
-/* Dark theme */
-.dark-theme #content-area > section {
-    border-color: white; /* Set border color for sections within #content-area */
 }
 
 footer {

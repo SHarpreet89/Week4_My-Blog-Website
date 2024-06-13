@@ -1,36 +1,7 @@
-#form-content {
-    padding: 1%;
-    width: 70%;
-    max-height: 100%;
-}
-
-#form-submit-button {
-    min-height: 30px;
-    width: 95%;
-}
-
 body {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-}
-
-#content-area {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-}
-
-
-#content-area > section {
-    height: 65vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50vw;
-    border: 2px solid black;
-    border-radius: 2%;
-    margin: 5px;
 }
 
 form > div {
@@ -54,19 +25,50 @@ form > div {
     max-height: 40vh;
 }
 
+#blog-background-image {
+    width: 70%; 
+    height: auto;
+    max-width: 80%; 
+    max-height: 80%; 
+    object-fit: contain;
+}
+
+#content-area {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+#content-area > section {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    border: 2px solid black;
+    border-radius: 2%;
+    margin: 5px;
+}
+
 #left-section > div {
     display: flex;
     max-width: 100%;
     max-height: 100%;
     justify-content: center;
-    align-items: center; /* Ensures the image is centered vertically */
+    align-items: center; 
     overflow: hidden;
 }
 
-#blog-background-image {
-    width: 70%; /* Adjusts the image to the full width of its container */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 80%; /* Prevents the image from being too wide */
-    max-height: 80%; /* Prevents the image from being too tall */
-    object-fit: contain; /* Ensures the image scales down while maintaining aspect ratio */
+#form-content {
+    padding: 1%;
+    width: 70%;
+    max-height: 100%;
 }
+
+#form-submit-button {
+    min-height: 30px;
+    width: 95%;
+}
+
+
+
