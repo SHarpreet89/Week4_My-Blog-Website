@@ -14,6 +14,18 @@ form > div {
     max-height: 100%;
 }
 
+#errorMessage {
+    color: rgb(255, 23, 23);
+    font-weight: bold;
+    font-size:x-large;
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(255, 244, 198);
+    text-align: center;
+    border-radius: 5px;
+    width: 95%;
+}
+
 #blog-info-form > div > input {
     width: 100%;
 }
