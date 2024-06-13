@@ -66,6 +66,7 @@ form > div {
 }
 
 #form-submit-button {
+    margin-top: 10px;
     min-height: 30px;
     width: 95%;
 }
