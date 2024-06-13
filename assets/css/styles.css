@@ -70,6 +70,14 @@
     color: black;
 }
 
+.display-none {
+    display: none;
+}
+
+.dispaly-block {
+    display: block;
+}
+
 #viewmode-button:hover {
     box-shadow: none !important;
 }

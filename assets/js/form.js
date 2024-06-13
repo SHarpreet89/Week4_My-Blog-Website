@@ -15,16 +15,22 @@ formButton.addEventListener('click', function(event) {
     // Validate Username
     if (userName.value.trim() === '') {
         error.textContent = "The Username cannot be blank! Please enter a user name.";
+        error.removeAttribute('class', '.display-none');
+        error.setAttribute('class', '.display-block');
     }
     // Validate Title
     else if (title.value.trim() === '') {
         error.textContent = "The Title cannot be blank! Please enter a Blog Title.";
+        error.removeAttribute('class', '.display-none');
+        error.setAttribute('class', '.display-block');
     }
     // Validate Content
     else {
         const wordCount = content.value.trim().split(/\s+/).length; // Split content by whitespace and count words
         if (wordCount < 5) {
             error.textContent = "The Content must be at least 5 words long! Please enter a longer content description for the blog.";
+            error.removeAttribute('class', '.display-none');
+            error.setAttribute('class', '.display-block');
         } else {
             // Create blogData object inside the event listener after validation
             const blogEntry = {
